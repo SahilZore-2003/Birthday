@@ -26,6 +26,14 @@
 
 
     <script>
+        let audio = new Audio("./music.mp3");
+        window.onload = () =>{
+            audio.play();
+        }
+         audio.onended=function()
+    {
+        audio.play();
+    };
         var typed = new Typed('#typed', {
             stringsElement: '#typed-strings',
             loop: true,
